@@ -2,18 +2,19 @@ import { motion } from 'framer-motion';
 import { Check, X } from 'lucide-react';
 
 const forYou = [
-    'Quer iniciar no mercado imobiliário do jeito certo',
-    'Já é corretor mas está estagnado nas vendas',
-    'Busca uma renda extra com alto potencial de escala',
-    'Quer aprender a vender imóveis de alto padrão',
-    'Precisa de um método validado e passo a passo'
+    'Quer iniciar no mercado imobiliário do jeito certo, sem cometer erros de iniciante',
+    'Deseja faturar seus primeiros 10k/mês nos próximos 90 dias',
+    'Não tem CRECI ainda (ou tem, mas nunca vendeu nada)',
+    'Está cansado de depender de salário fixo e quer empreender com propósito',
+    'Quer um método VALIDADO por quem já gerou R$ 850 milhões em vendas'
 ];
 
 const notForYou = [
-    'Procura fórmulas mágicas de enriquecimento rápido',
-    'Não está disposto a estudar e aplicar o método',
-    'Acha que vender imóveis é apenas sorte',
-    'Não tem compromisso com resultados de longo prazo'
+    'Procura fórmulas mágicas de enriquecimento sem esforço',
+    'Não está disposto a aplicar o método nos próximos 90 dias',
+    'Quer apenas "consumir conteúdo" sem colocar em prática',
+    'Já fatura mais de 20k/mês consistentemente no mercado imobiliário',
+    'Não acredita que é possível mudar de vida com conhecimento e ação'
 ];
 
 export default function TargetAudience() {
@@ -35,12 +36,12 @@ export default function TargetAudience() {
                 </motion.div>
 
                 <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                    {/* For You - Green/Gold */}
+                    {/* For You - Green */}
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="bg-white rounded-2xl p-8 border-2 border-success/20 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                        className="bg-success/5 rounded-2xl p-8 border-2 border-success/20 shadow-lg hover:shadow-xl transition-shadow duration-300"
                     >
                         <h3 className="text-2xl font-heading font-bold text-success mb-6 flex items-center gap-2">
                             <div className="bg-success/10 p-2 rounded-full">
@@ -65,12 +66,12 @@ export default function TargetAudience() {
                         </ul>
                     </motion.div>
 
-                    {/* Not For You - Red/Dark */}
+                    {/* Not For You - Red */}
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="bg-white rounded-2xl p-8 border-2 border-danger/20 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                        className="bg-danger/5 rounded-2xl p-8 border-2 border-danger/20 shadow-lg hover:shadow-xl transition-shadow duration-300"
                     >
                         <h3 className="text-2xl font-heading font-bold text-danger mb-6 flex items-center gap-2">
                             <div className="bg-danger/10 p-2 rounded-full">

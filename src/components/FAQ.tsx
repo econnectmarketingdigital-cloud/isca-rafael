@@ -9,23 +9,35 @@ const faqs = [
     },
     {
         question: 'Preciso ter CRECI para começar?',
-        answer: 'Não para estudar e aprender. Você pode iniciar como estagiário ou parceiro de imobiliárias enquanto regulariza sua situação. O conhecimento você deve adquirir AGORA.'
+        answer: 'Não para estudar e aprender. O método funciona tanto para quem ainda não tem CRECI quanto para quem já tem registro mas nunca vendeu ou quer aumentar resultados.'
     },
     {
-        question: 'Por que o valor é tão baixo (R$ 4,97)?',
+        question: 'Por que o valor é tão baixo (R$ 27,00)?',
         answer: 'Esta é uma estratégia de "isca digital" para democratizar o acesso. Quero que você conheça a qualidade do meu material sem barreira de entrada. O valor real é inestimável.'
+    },
+    {
+        question: 'Quanto tempo leva para eu faturar meus primeiros 10k?',
+        answer: 'Isso depende da sua dedicação e consistência. Mas com aplicação correta do método, a maioria dos nossos alunos fecha a primeira venda de 5-10k entre 30 a 90 dias.'
+    },
+    {
+        question: 'Este e-book substitui uma mentoria?',
+        answer: 'Não. O START 10K é o primeiro passo — uma base sólida para você entender o mercado e começar a vender. Para quem quer aceleração máxima, temos mentorias individuais e em grupo.'
+    },
+    {
+        question: 'Vou receber suporte ou é só o e-book?',
+        answer: 'Este é um produto digital informativo. Você recebe todo o conteúdo para estudar no seu ritmo. Para suporte direto, recomendamos nossas mentorias.'
+    },
+    {
+        question: 'Como funciona a garantia de 7 dias?',
+        answer: 'Simples: você tem 7 dias para explorar todo o conteúdo. Se por qualquer motivo não ficar satisfeito, basta enviar um e-mail e devolvemos 100% do seu investimento. Sem perguntas, sem burocracia.'
+    },
+    {
+        question: 'O pagamento é seguro?',
+        answer: 'Sim! Todo processamento é feito pela Hotmart, a maior plataforma de produtos digitais da América Latina, com certificado SSL e máxima segurança.'
     },
     {
         question: 'Tenho acesso imediato ao conteúdo?',
         answer: 'Sim! Assim que o pagamento for aprovado, você recebe o acesso por e-mail automaticamente. Pode começar a estudar em 2 minutos.'
-    },
-    {
-        question: 'E se eu não gostar do conteúdo?',
-        answer: 'Você tem 7 dias de garantia incondicional. Se não gostar, devolvemos 100% do seu dinheiro. O risco é todo meu.'
-    },
-    {
-        question: 'O método funciona para qualquer cidade?',
-        answer: 'Sim. Os princípios de vendas, negociação e comportamento humano são universais. O método já foi validado em 7 estados diferentes e até fora do Brasil.'
     }
 ];
 

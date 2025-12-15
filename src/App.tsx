@@ -8,20 +8,28 @@ import FAQ from './components/FAQ';
 import HowItWorks from './components/HowItWorks';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
+import InvestmentSection from './components/InvestmentSection';
+import RiskZero from './components/RiskZero';
+import UrgencySection from './components/UrgencySection';
+import StickyCTA from './components/StickyCTA';
 
 function App() {
   return (
     <div className="min-h-screen">
       <Hero />
       <SocialProof />
-      <WhatYouGet />
       <HowItWorks />
       <TargetAudience />
       <AboutAuthor />
+      <WhatYouGet />
+      <InvestmentSection />
+      <RiskZero />
+      <UrgencySection />
       <Guarantee />
       <FAQ />
       <FinalCTA />
       <Footer />
+      <StickyCTA />
     </div>
   );
 }

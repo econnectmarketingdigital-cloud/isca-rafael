@@ -14,7 +14,7 @@ const steps = [
     {
         number: '03',
         title: 'Implemente e Cresça',
-        description: 'Aplique o método nos próximos 90 dias e veja seus resultados decolarem'
+        description: 'Aplique o método nos próximos 90 dias e veja seus resultados decolarem. Este é o mesmo sistema que transformou mais de 1.000 corretores.'
     }
 ];
 

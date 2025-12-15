@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { CheckCircle2, Lock, Zap } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 
 export default function Hero() {
     return (
@@ -26,7 +26,7 @@ export default function Hero() {
                             transition={{ duration: 0.4 }}
                             className="inline-flex items-center gap-2 bg-gradient-gold text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg"
                         >
-                            🎯 Produto Digital - Acesso Imediato
+                            ✨ Produto Digital - Acesso Imediato
                         </motion.div>
 
                         {/* Headline */}
@@ -44,75 +44,45 @@ export default function Hero() {
                         <p className="text-base md:text-lg text-gray-600">
                             O mesmo método que Rafael Targino usou para gerar{' '}
                             <strong className="text-primary">R$ 850 milhões em VGV</strong> ao longo de 30 anos,
-                            agora condensado em um kit prático para você dar o primeiro passo
+                            agora condensado em um kit prático para você dar o primeiro passo — por menos que um combo de fast food.
                         </p>
 
-                        {/* Price Box - MOVED UP */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 0.5 }}
-                            className="bg-gradient-to-br from-primary via-accent to-primary rounded-2xl p-8 text-white shadow-2xl border border-gold-500/20"
-                        >
-                            <div className="text-center space-y-4">
-                                <p className="text-sm opacity-90 line-through">De: R$ 97,00</p>
-                                <div>
-                                    <p className="text-lg font-semibold mb-2">Investimento Simbólico:</p>
-                                    <p className="text-6xl md:text-7xl font-bold text-gradient-gold">R$ 4,97</p>
-                                </div>
-
-                                <div className="space-y-2 text-sm">
-                                    <p className="flex items-center justify-center gap-2">
-                                        🔥 <strong>95% de desconto</strong> - Oferta de Lançamento
-                                    </p>
-                                    <p className="flex items-center justify-center gap-2">
-                                        <Zap className="w-4 h-4" />
-                                        Acesso 100% imediato após pagamento
-                                    </p>
-                                    <p className="flex items-center justify-center gap-2">
-                                        <Lock className="w-4 h-4" />
-                                        Compra 100% segura via Hotmart
-                                    </p>
-                                </div>
-                            </div>
-                        </motion.div>
-
-                        {/* CTA Button */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 0.7 }}
-                        >
-                            <a
-                                href="https://pay.hotmart.com/XXXXXX?src=lovable"
-                                className="block w-full bg-gradient-to-r from-success to-emerald-600 hover:from-emerald-600 hover:to-success text-white text-center text-lg md:text-xl font-heading font-bold py-6 px-8 rounded-xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
-                            >
-                                COMEÇAR MINHA JORNADA PARA 10K AGORA
-                            </a>
-                            <p className="text-center text-sm text-gray-500 mt-3">
-                                Pagamento processado pela Hotmart | Garantia de 7 dias
-                            </p>
-                        </motion.div>
-
-                        {/* Bullets - MOVED DOWN */}
+                        {/* Benefits List */}
                         <div className="space-y-4 pt-4">
                             {[
-                                'Aprenda os 12 pilares da alta performance aplicados às vendas',
-                                'Sistema completo: fazer, multiplicar e colher dinheiro no imobiliário',
-                                'Ferramentas práticas para implementar nos próximos 90 dias'
+                                'Acesso Imediato ao Kit Completo',
+                                'Garantia Incondicional de 7 Dias',
+                                'Método Validado por +1.000 Corretores'
                             ].map((item, index) => (
                                 <motion.div
                                     key={index}
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.4, delay: 0.9 + index * 0.1 }}
+                                    transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
                                     className="flex items-start gap-3"
                                 >
                                     <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
-                                    <span className="text-gray-700">{item}</span>
+                                    <span className="text-gray-700 font-medium">{item}</span>
                                 </motion.div>
                             ))}
                         </div>
+
+                        {/* CTA Button */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.8 }}
+                        >
+                            <a
+                                href="#investimento"
+                                className="block w-full bg-gradient-to-r from-success to-emerald-600 hover:from-emerald-600 hover:to-success text-white text-center text-lg md:text-xl font-heading font-bold py-6 px-8 rounded-xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
+                            >
+                                COMEÇAR MINHA JORNADA PARA 10K AGORA
+                            </a>
+                            <p className="text-center text-sm text-gray-500 mt-3 flex items-center justify-center gap-2">
+                                🛡️ Compra 100% segura via Hotmart | ⏰ Oferta de lançamento
+                            </p>
+                        </motion.div>
                     </motion.div>
 
                     {/* Right Column - Rafael's Image */}

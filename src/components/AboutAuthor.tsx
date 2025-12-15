@@ -97,6 +97,15 @@ export default function AboutAuthor() {
                                 "Não basta ter experiência. É preciso sistematizar o conhecimento e passar adiante.
                                 Esse é meu legado." — Rafael Targino
                             </blockquote>
+
+                            <div className="bg-white/5 p-6 rounded-xl border border-gold-500/30 mt-8">
+                                <p className="text-lg font-medium text-white mb-2">
+                                    Agora, pela primeira vez, Rafael está disponibilizando o método que ele levou 30 anos para aperfeiçoar em um formato acessível para quem está começando.
+                                </p>
+                                <p className="text-gold-300 font-bold">
+                                    Esta é sua oportunidade de aprender com quem JÁ FEZ, sem precisar cometer os mesmos erros.
+                                </p>
+                            </div>
                         </div>
 
                         {/* Badges */}
