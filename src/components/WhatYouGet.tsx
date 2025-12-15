@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { BookOpen, Video, Target, MessageSquare } from 'lucide-react';
+import { Video, Target, MessageSquare, BookOpen } from 'lucide-react';
 
 const items = [
     {
@@ -112,13 +112,14 @@ export default function WhatYouGet() {
 
                         {/* Mockup Image Placeholder */}
                         <div className="relative w-full max-w-md">
-                            <div className="aspect-[3/4] bg-gradient-to-br from-primary to-dark rounded-xl shadow-2xl flex items-center justify-center border border-white/10 transform rotate-[-5deg] hover:rotate-0 transition-transform duration-500">
-                                <div className="text-center p-8 text-white">
-                                    <BookOpen className="w-20 h-20 mx-auto mb-4 text-secondary" />
-                                    <h3 className="text-3xl font-heading font-bold mb-2">START 10K</h3>
-                                    <p className="text-white/60">Manual Completo</p>
-                                </div>
-                            </div>
+                            <motion.img
+                                src="/ebook-cover.png"
+                                alt="Capa do E-book START 10K"
+                                className="w-full h-auto rounded-xl shadow-2xl transform rotate-[-5deg] hover:rotate-0 transition-transform duration-500"
+                                initial={{ opacity: 0, scale: 0.8 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                            />
                         </div>
                     </motion.div>
                 </div>
