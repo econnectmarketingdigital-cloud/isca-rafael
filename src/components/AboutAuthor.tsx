@@ -24,7 +24,7 @@ export default function AboutAuthor() {
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="lg:col-span-2"
+                        className="lg:col-span-2 hidden lg:block"
                     >
                         <div className="relative">
                             {/* Rafael's Photo - Hands Presenting */}
@@ -62,7 +62,7 @@ export default function AboutAuthor() {
                                 ao longo de três décadas com resultados concretos e impacto real na vida de milhares de pessoas.
                             </p>
 
-                            <p>
+                            <p className="hidden md:block">
                                 Nascido no Rio de Janeiro em 1977, Rafael começou sua jornada em 1995, quando aceitou um
                                 convite inusitado da mãe para atuar na venda de casas populares no Rio Grande do Norte.
                                 O que era para ser temporário se tornou uma vocação que o levaria a transformar não apenas
@@ -93,7 +93,7 @@ export default function AboutAuthor() {
                                 usa para mentorar corretores de elite, agora acessível para você por um valor simbólico.
                             </p>
 
-                            <blockquote className="border-l-4 border-secondary pl-4 italic text-white/80 my-6">
+                            <blockquote className="border-l-4 border-secondary pl-4 italic text-white/80 my-6 hidden md:block">
                                 "Não basta ter experiência. É preciso sistematizar o conhecimento e passar adiante.
                                 Esse é meu legado." — Rafael Targino
                             </blockquote>
@@ -109,7 +109,7 @@ export default function AboutAuthor() {
                         </div>
 
                         {/* Badges */}
-                        <div className="grid grid-cols-2 gap-4 mt-8">
+                        <div className="hidden md:grid grid-cols-2 gap-4 mt-8">
                             {badges.map((badge, index) => {
                                 const Icon = badge.icon;
                                 return (
