@@ -111,13 +111,15 @@ export default function WhatYouGet() {
                         <div className="absolute w-[500px] h-[500px] bg-gradient-to-br from-secondary/20 to-gold-400/20 rounded-full blur-3xl -z-10"></div>
 
                         {/* Mockup Image Placeholder */}
-                        <div className="relative w-full max-w-md">
+                        <div className="relative w-full max-w-sm mx-auto">
                             <motion.img
                                 src="/ebook-cover.png"
                                 alt="Capa do E-book START 10K"
-                                className="w-full h-auto rounded-xl shadow-2xl transform rotate-[-5deg] hover:rotate-0 transition-transform duration-500"
-                                initial={{ opacity: 0, scale: 0.8 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
+                                className="w-full h-auto rounded-xl shadow-2xl border-4 border-white/5"
+                                initial={{ opacity: 0, x: 100, rotate: -15 }}
+                                whileInView={{ opacity: 1, x: 0, rotate: -5 }}
+                                whileHover={{ rotate: 0, scale: 1.05 }}
+                                transition={{ type: "spring", stiffness: 50, damping: 20 }}
                                 viewport={{ once: true }}
                             />
                         </div>
