@@ -36,6 +36,7 @@ export default function StickyCTA() {
                 >
                     <a
                         href="https://pay.hotmart.com/G103379648S"
+                        onClick={() => (window as any).fbq('track', 'InitiateCheckout')}
                         className="flex items-center justify-center gap-2 w-full bg-green-600 text-white font-bold py-4 px-6 rounded-xl shadow-2xl animate-pulse"
                     >
                         GARANTIR POR R$ 27 AGORA

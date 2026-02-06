@@ -36,6 +36,7 @@ export default function UrgencySection() {
 
                         <a
                             href="https://pay.hotmart.com/G103379648S"
+                            onClick={() => (window as any).fbq('track', 'InitiateCheckout')}
                             className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white text-lg font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 w-full md:w-auto"
                         >
                             GARANTIR MINHA VAGA AGORA

@@ -55,6 +55,7 @@ export default function InvestmentSection() {
 
                             <a
                                 href="https://pay.hotmart.com/G103379648S"
+                                onClick={() => (window as any).fbq('track', 'InitiateCheckout')}
                                 className="block w-full md:max-w-lg mx-auto bg-gradient-to-r from-success to-emerald-600 hover:from-emerald-600 hover:to-success text-white text-center text-xl md:text-2xl font-heading font-bold py-6 px-8 rounded-xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
                             >
                                 COMEÇAR MINHA JORNADA PARA 10K AGORA

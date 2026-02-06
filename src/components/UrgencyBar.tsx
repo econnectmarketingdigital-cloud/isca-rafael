@@ -51,6 +51,7 @@ export default function UrgencyBar() {
 
                     <a
                         href="https://pay.hotmart.com/G103379648S"
+                        onClick={() => (window as any).fbq('track', 'InitiateCheckout')}
                         className="inline-block bg-success hover:bg-green-600 text-white font-heading font-semibold text-lg py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                     >
                         GARANTIR MEU START 10K POR R$ 27 AGORA

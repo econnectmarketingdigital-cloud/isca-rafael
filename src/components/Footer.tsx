@@ -44,7 +44,11 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://pay.hotmart.com/G103379648S" className="hover:text-secondary transition-colors">
+                                <a
+                                    href="https://pay.hotmart.com/G103379648S"
+                                    onClick={() => (window as any).fbq('track', 'InitiateCheckout')}
+                                    className="hover:text-secondary transition-colors"
+                                >
                                     Depoimentos
                                 </a>
                             </li>
