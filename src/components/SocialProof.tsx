@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion';
 
 const testimonials = [
-    { image: `${import.meta.env.BASE_URL}proof-1.jpg`, alt: "Depoimento aluno Start 10k - 1" },
-    { image: `${import.meta.env.BASE_URL}proof-2.jpg`, alt: "Depoimento aluno Start 10k - 2" },
-    { image: `${import.meta.env.BASE_URL}proof-3.jpg`, alt: "Depoimento aluno Start 10k - 3" },
+    { image: `${import.meta.env.BASE_URL}proof-2.jpg`, alt: "Depoimento aluno Start 10k" },
+    { image: `${import.meta.env.BASE_URL}proof-3.jpg`, alt: "Depoimento aluno Start 10k" },
 ];
 
 export default function SocialProof() {
@@ -33,27 +32,29 @@ export default function SocialProof() {
 }
 
 function MarqueeContent() {
+    // Duplicate items enough times to fill screen and allow looping
+    const items = [...testimonials, ...testimonials, ...testimonials, ...testimonials, ...testimonials, ...testimonials];
+
     return (
         <motion.div
-            className="flex gap-4 md:gap-8 pr-4 md:pr-8"
+            className="flex items-start gap-4 md:gap-8 pr-4 md:pr-8"
             animate={{ x: "-50%" }}
             transition={{
                 ease: "linear",
-                duration: 30,
+                duration: 40, // Slower for better readability
                 repeat: Infinity,
             }}
             style={{ display: "flex", width: "fit-content" }}
         >
-            {/* Render items multiple times for seamless loop */}
-            {[...testimonials, ...testimonials, ...testimonials, ...testimonials].map((item, index) => (
+            {items.map((item, index) => (
                 <div
                     key={index}
-                    className="flex-shrink-0 w-[280px] md:w-[350px] relative rounded-xl overflow-hidden border border-gold-500/20 shadow-lg"
+                    className="flex-shrink-0 w-[280px] md:w-[350px] relative rounded-xl overflow-hidden border border-gold-500/20 shadow-lg bg-dark"
                 >
                     <img
                         src={item.image}
                         alt={item.alt}
-                        className="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity duration-300"
+                        className="w-full h-auto object-contain block"
                     />
                 </div>
             ))}
