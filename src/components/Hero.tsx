@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, BookOpen, Users, Video } from 'lucide-react';
 
 export default function Hero() {
     return (
@@ -36,24 +36,55 @@ export default function Hero() {
                             no Mercado Imobiliário
                         </h1>
 
-                        {/* Mobile Only: Early CTA */}
+                        {/* Mobile Only: Offer Card */}
                         <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
-                            className="block md:hidden"
+                            className="block md:hidden bg-dark/95 backdrop-blur-md rounded-2xl p-6 border border-gold-500/30 shadow-2xl mt-6 relative overflow-hidden"
                         >
+                            {/* Card Glow */}
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/20 rounded-full blur-3xl -z-10"></div>
+
+                            <div className="text-center mb-4">
+                                <span className="inline-block bg-white/10 text-gold-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+                                    Oferta Exclusiva
+                                </span>
+                                <h3 className="text-xl font-heading font-bold text-white mb-1">
+                                    Kit Start 10k
+                                </h3>
+                                <div className="flex items-center justify-center gap-2">
+                                    <span className="text-gray-400 text-sm line-through">R$ 218</span>
+                                    <span className="text-3xl font-bold text-success">R$ 27,00</span>
+                                </div>
+                            </div>
+
+                            <div className="space-y-3 mb-6 bg-white/5 p-4 rounded-xl">
+                                <div className="flex items-center gap-3">
+                                    <BookOpen className="w-5 h-5 text-secondary flex-shrink-0" />
+                                    <span className="text-gray-200 text-sm">E-book Completo (Manual)</span>
+                                </div>
+                                <div className="flex items-center gap-3">
+                                    <Video className="w-5 h-5 text-secondary flex-shrink-0" />
+                                    <span className="text-gray-200 text-sm">Vídeo Aula (Método 3 Passos)</span>
+                                </div>
+                                <div className="flex items-center gap-3">
+                                    <Users className="w-5 h-5 text-secondary flex-shrink-0" />
+                                    <span className="text-gray-200 text-sm">Grupo Exclusivo (Networking)</span>
+                                </div>
+                                <div className="flex items-center gap-3">
+                                    <CheckCircle2 className="w-5 h-5 text-success flex-shrink-0" />
+                                    <span className="text-gray-200 text-sm">Garantia de 7 Dias</span>
+                                </div>
+                            </div>
+
                             <a
                                 href="https://pay.hotmart.com/G103379648S"
-                                className="block w-full bg-gradient-to-r from-success to-emerald-600 text-white text-center text-lg font-heading font-bold py-4 px-6 rounded-xl shadow-lg relative overflow-hidden group"
+                                className="block w-full bg-gradient-to-r from-success to-emerald-600 text-white text-center text-lg font-heading font-bold py-4 px-6 rounded-xl shadow-lg relative overflow-hidden group hover:scale-[1.02] transition-transform"
                             >
                                 <span className="relative z-10 flex items-center justify-center gap-2">
-                                    QUERO FATURAR 10K
+                                    GARANTIR MEU ACESSO AGORA
                                 </span>
-                                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                             </a>
-                            <p className="text-center text-xs text-gray-500 mt-2">
-                                🔥 De <span className="line-through">R$ 218</span> por apenas <strong>R$ 27</strong>
-                            </p>
                         </motion.div>
 
                         {/* Subheadline */}
