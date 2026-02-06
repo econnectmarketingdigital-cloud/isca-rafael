@@ -57,18 +57,15 @@ export default function AboutAuthor() {
                         </h2>
 
                         <div className="space-y-6 text-white/90 leading-relaxed">
-                            <p className="text-lg">
-                                Rafael Targino não é apenas um nome no mercado imobiliário — é uma autoridade com <strong className="text-secondary">30 anos de experiência</strong> testada no campo de batalha.
+                            <p className="text-lg font-medium">
+                                Rafael Targino é <strong>CEO do Sheets Park Group</strong> e uma autoridade com <strong className="text-secondary">30 anos de experiência</strong>.
                             </p>
 
                             <p>
-                                De vendedor de casas populares a CEO do Sheets Park Group com atuação em 7 estados, Rafael sistematizou o método exato que gerou mais de <strong>R$ 850 milhões em vendas</strong>.
+                                De vendedor de casas populares a líder de operações em 7 estados, ele sistematizou o método exato que gerou mais de <strong>R$ 850 milhões em vendas</strong> para entregar a você o "mapa do tesouro".
                             </p>
 
-                            <div className="bg-white/5 p-6 rounded-xl border border-gold-500/30">
-                                <p className="font-semibold text-white mb-4">
-                                    Por que confiar neste método?
-                                </p>
+                            <div className="bg-white/5 p-5 rounded-xl border border-gold-500/30">
                                 <ul className="space-y-3">
                                     <li className="flex items-center gap-2">
                                         <Award className="w-5 h-5 text-secondary flex-shrink-0" />
@@ -84,10 +81,6 @@ export default function AboutAuthor() {
                                     </li>
                                 </ul>
                             </div>
-
-                            <p className="font-medium text-gold-200">
-                                Sua missão é clara: entregar o "mapa do tesouro" para quem quer começar do zero e atingir seus primeiros R$ 10k/mês rápido.
-                            </p>
                         </div>
 
                         {/* Badges */}

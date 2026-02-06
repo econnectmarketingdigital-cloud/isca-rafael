@@ -19,11 +19,11 @@ function App() {
       <SocialProof />
       <HowItWorks />
       <TargetAudience />
-      <AboutAuthor />
       <WhatYouGet />
       <InvestmentSection />
       <RiskZero />
       <UrgencySection />
+      <AboutAuthor />
       <Guarantee />
       <FAQ />
       <Footer />
