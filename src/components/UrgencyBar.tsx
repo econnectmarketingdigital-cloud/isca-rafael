@@ -19,7 +19,7 @@ export default function UrgencyBar() {
                     </div>
 
                     <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                        O preço promocional de <strong>R$ 4,97</strong> é uma oferta de lançamento
+                        O preço promocional de <strong>R$ 27,00</strong> é uma oferta de lançamento
                         para os primeiros 500 compradores.
                     </p>
 
@@ -50,10 +50,10 @@ export default function UrgencyBar() {
                     </p>
 
                     <a
-                        href="https://pay.hotmart.com/XXXXXX?src=lovable"
+                        href="https://pay.hotmart.com/G103379648S"
                         className="inline-block bg-success hover:bg-green-600 text-white font-heading font-semibold text-lg py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                     >
-                        GARANTIR MEU START 10K POR R$ 4,97 AGORA
+                        GARANTIR MEU START 10K POR R$ 27 AGORA
                     </a>
                 </motion.div>
             </div>

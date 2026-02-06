@@ -10,7 +10,7 @@ const badges = [
 
 export default function AboutAuthor() {
     return (
-        <section className="py-20 bg-gradient-to-br from-primary via-accent to-dark text-white relative overflow-hidden">
+        <section id="sobre" className="py-20 bg-gradient-to-br from-primary via-accent to-dark text-white relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-0 left-0 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
@@ -29,7 +29,7 @@ export default function AboutAuthor() {
                         <div className="relative">
                             {/* Rafael's Photo - Hands Presenting */}
                             <img
-                                src="/uploaded_image_1_1764306153458.png"
+                                src={`${import.meta.env.BASE_URL}uploaded_image_1_1764306153458.png`}
                                 alt="Rafael Targino - CEO Sheets Park Group"
                                 className="w-full h-auto rounded-2xl shadow-2xl"
                                 style={{
@@ -56,56 +56,38 @@ export default function AboutAuthor() {
                             Quem é Rafael Targino
                         </h2>
 
-                        <div className="space-y-4 text-white/90 leading-relaxed">
-                            <p>
-                                Rafael Targino não é apenas um nome no mercado imobiliário — é uma trajetória construída
-                                ao longo de três décadas com resultados concretos e impacto real na vida de milhares de pessoas.
-                            </p>
-
-                            <p className="hidden md:block">
-                                Nascido no Rio de Janeiro em 1977, Rafael começou sua jornada em 1995, quando aceitou um
-                                convite inusitado da mãe para atuar na venda de casas populares no Rio Grande do Norte.
-                                O que era para ser temporário se tornou uma vocação que o levaria a transformar não apenas
-                                sua própria vida, mas a de mais de 1.000 corretores ao longo dos anos.
-                            </p>
-
-                            <p className="font-semibold text-white">
-                                Ao longo de 30 anos, Rafael:
-                            </p>
-
-                            <ul className="space-y-2 ml-4">
-                                <li>• Gerou mais de R$ 850 milhões em VGV (Valor Geral de Vendas)</li>
-                                <li>• Coordenou operações imobiliárias em 7 estados brasileiros</li>
-                                <li>• Viveu nos Estados Unidos e Espanha, expandindo sua visão global de negócios</li>
-                                <li>• Especializou-se no nicho de loteamentos — o mercado de maior retorno e menor concorrência</li>
-                                <li>• Fundou e lidera o Sheets Park Group, empresa com atuação nacional</li>
-                            </ul>
-
-                            <p>
-                                Mas Rafael não se contentou apenas com o próprio sucesso. Sua missão é clara:{' '}
-                                <strong className="text-secondary">democratizar o conhecimento que o levou ao topo</strong>{' '}
-                                e provar que qualquer pessoa, com método, disciplina e os pilares certos, pode prosperar
-                                no mercado imobiliário.
+                        <div className="space-y-6 text-white/90 leading-relaxed">
+                            <p className="text-lg">
+                                Rafael Targino não é apenas um nome no mercado imobiliário — é uma autoridade com <strong className="text-secondary">30 anos de experiência</strong> testada no campo de batalha.
                             </p>
 
                             <p>
-                                O START 10K é o primeiro passo dessa jornada transformadora. O mesmo conteúdo que Rafael
-                                usa para mentorar corretores de elite, agora acessível para você por um valor simbólico.
+                                De vendedor de casas populares a CEO do Sheets Park Group com atuação em 7 estados, Rafael sistematizou o método exato que gerou mais de <strong>R$ 850 milhões em vendas</strong>.
                             </p>
 
-                            <blockquote className="border-l-4 border-secondary pl-4 italic text-white/80 my-6 hidden md:block">
-                                "Não basta ter experiência. É preciso sistematizar o conhecimento e passar adiante.
-                                Esse é meu legado." — Rafael Targino
-                            </blockquote>
-
-                            <div className="bg-white/5 p-6 rounded-xl border border-gold-500/30 mt-8">
-                                <p className="text-lg font-medium text-white mb-2">
-                                    Agora, pela primeira vez, Rafael está disponibilizando o método que ele levou 30 anos para aperfeiçoar em um formato acessível para quem está começando.
+                            <div className="bg-white/5 p-6 rounded-xl border border-gold-500/30">
+                                <p className="font-semibold text-white mb-4">
+                                    Por que confiar neste método?
                                 </p>
-                                <p className="text-gold-300 font-bold">
-                                    Esta é sua oportunidade de aprender com quem JÁ FEZ, sem precisar cometer os mesmos erros.
-                                </p>
+                                <ul className="space-y-3">
+                                    <li className="flex items-center gap-2">
+                                        <Award className="w-5 h-5 text-secondary flex-shrink-0" />
+                                        <span>30 Anos de Mercado Imobiliário</span>
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <Globe className="w-5 h-5 text-secondary flex-shrink-0" />
+                                        <span>Atuação Nacional e Internacional</span>
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <Briefcase className="w-5 h-5 text-secondary flex-shrink-0" />
+                                        <span>+1.000 Corretores Mentorados</span>
+                                    </li>
+                                </ul>
                             </div>
+
+                            <p className="font-medium text-gold-200">
+                                Sua missão é clara: entregar o "mapa do tesouro" para quem quer começar do zero e atingir seus primeiros R$ 10k/mês rápido.
+                            </p>
                         </div>
 
                         {/* Badges */}

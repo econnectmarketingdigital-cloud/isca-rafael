@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Video, Target, MessageSquare, BookOpen } from 'lucide-react';
+import { Video, Target, Users, BookOpen } from 'lucide-react';
 
 const items = [
     {
@@ -21,17 +21,17 @@ const items = [
         value: 'R$ 27'
     },
     {
-        icon: MessageSquare,
-        title: 'BÔNUS EXTRA: 10 Scripts Prontos',
-        description: 'Mensagens testadas e aprovadas para WhatsApp, ligações e e-mails que convertem.',
-        value: 'R$ 47',
+        icon: Users,
+        title: 'BÔNUS EXTRA: Grupo Exclusivo',
+        description: 'Acesso à comunidade com Rafael Targino e outros players do mercado para insights diários, networking e troca de experiências.',
+        value: 'R$ 97',
         isBonus: true
     }
 ];
 
 export default function WhatYouGet() {
     return (
-        <section className="py-20 bg-texture-paper overflow-hidden border-t border-gold-100/50">
+        <section id="o-que-voce-recebe" className="py-20 bg-texture-paper overflow-hidden border-t border-gold-100/50">
             <div className="container mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left - Content */}
@@ -113,7 +113,7 @@ export default function WhatYouGet() {
                         {/* Mockup Image Placeholder */}
                         <div className="relative w-full max-w-sm mx-auto">
                             <motion.img
-                                src="/ebook-cover.png"
+                                src={`${import.meta.env.BASE_URL}ebook-cover.png`}
                                 alt="Capa do E-book START 10K"
                                 className="w-full h-auto rounded-xl shadow-2xl border-4 border-white/5"
                                 initial={{ opacity: 0, x: 100, rotate: -15 }}

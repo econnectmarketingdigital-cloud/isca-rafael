@@ -3,7 +3,7 @@ import { ShieldCheck } from 'lucide-react';
 
 export default function Guarantee() {
     return (
-        <section className="py-20 bg-texture-paper relative overflow-hidden border-t border-gold-100/50">
+        <section id="garantia" className="py-20 bg-texture-paper relative overflow-hidden border-t border-gold-100/50">
             <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-gold-100 relative overflow-hidden">
                     {/* Background decoration */}

@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Instagram, Mail, MapPin, Phone } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -15,13 +15,13 @@ export default function Footer() {
                         </p>
                         <div className="flex gap-4">
                             {[
-                                { icon: Instagram, href: '#' },
-                                { icon: Facebook, href: '#' },
-                                { icon: Linkedin, href: '#' }
+                                { icon: Instagram, href: 'https://www.instagram.com/rafaeltarginooficial?igsh=MW5pNTd4bHBxNTFsMg==' }
                             ].map((social, index) => (
                                 <a
                                     key={index}
                                     href={social.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300"
                                 >
                                     <social.icon className="w-5 h-5" />
@@ -30,17 +30,34 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Links */}
                     <div>
                         <h3 className="font-heading font-bold mb-6 text-lg">Links Rápidos</h3>
                         <ul className="space-y-3 text-gray-400">
-                            {['Sobre', 'O Que Você Recebe', 'Depoimentos', 'Garantia', 'FAQ'].map((item, index) => (
-                                <li key={index}>
-                                    <a href="#" className="hover:text-secondary transition-colors">
-                                        {item}
-                                    </a>
-                                </li>
-                            ))}
+                            <li>
+                                <a href="#sobre" className="hover:text-secondary transition-colors">
+                                    Sobre
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#o-que-voce-recebe" className="hover:text-secondary transition-colors">
+                                    O Que Você Recebe
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://pay.hotmart.com/G103379648S" className="hover:text-secondary transition-colors">
+                                    Depoimentos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#garantia" className="hover:text-secondary transition-colors">
+                                    Garantia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#faq" className="hover:text-secondary transition-colors">
+                                    FAQ
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
@@ -50,11 +67,15 @@ export default function Footer() {
                         <ul className="space-y-4 text-gray-400">
                             <li className="flex items-start gap-3">
                                 <Mail className="w-5 h-5 text-secondary flex-shrink-0 mt-1" />
-                                <span>suporte@rafaeltargino.com.br</span>
+                                <a href="mailto:rafaeltarginooficial@gmail.com" className="hover:text-secondary transition-colors">
+                                    rafaeltarginooficial@gmail.com
+                                </a>
                             </li>
                             <li className="flex items-start gap-3">
                                 <Phone className="w-5 h-5 text-secondary flex-shrink-0 mt-1" />
-                                <span>(11) 99999-9999</span>
+                                <a href="tel:+556196707337" className="hover:text-secondary transition-colors">
+                                    +55 61 9670-7337
+                                </a>
                             </li>
                             <li className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-secondary flex-shrink-0 mt-1" />

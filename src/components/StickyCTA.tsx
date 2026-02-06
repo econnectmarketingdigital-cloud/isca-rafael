@@ -35,7 +35,7 @@ export default function StickyCTA() {
                     className="fixed bottom-0 left-0 right-0 z-50 p-4 md:hidden"
                 >
                     <a
-                        href="#investimento"
+                        href="https://pay.hotmart.com/G103379648S"
                         className="flex items-center justify-center gap-2 w-full bg-green-600 text-white font-bold py-4 px-6 rounded-xl shadow-2xl animate-pulse"
                     >
                         GARANTIR POR R$ 27 AGORA
